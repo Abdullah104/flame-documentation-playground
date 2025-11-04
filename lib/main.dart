@@ -1,15 +1,6 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
-import 'flame/game_widget.dart';
+import 'flame/the_game_class.dart';
 
-void main() => runApp(
-  GameWidget(
-    game: MyGame(),
-    overlayBuilderMap: {
-      'PauseMenu': (context, game) {
-        return Container(color: Colors.black, child: Text('A pause menu'));
-      },
-    },
-  ),
-);
+void main() => runApp(GameWidget(game: TheGameClass()));
